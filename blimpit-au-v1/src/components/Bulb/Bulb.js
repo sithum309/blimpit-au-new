@@ -2,7 +2,10 @@ import React from 'react';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import Typography from '@material-ui/core/Typography';
 import Grid from '@material-ui/core/Grid';
-
+import Avatar from '@material-ui/core/Avatar';
+import Chip from '@material-ui/core/Chip';
+import FaceIcon from '@material-ui/icons/Face';
+import DoneIcon from '@material-ui/icons/Done';
 
 import Box from '@material-ui/core/Box';
 import { makeStyles } from '@material-ui/core/styles';
@@ -20,8 +23,17 @@ const useStyles = makeStyles({
         textAlign: 'left',
     },
 });
-
-
+//Text box
+const useStyles3 = makeStyles((theme) => ({
+    root: {
+      display: 'flex',
+      justifyContent: 'center',
+      flexWrap: 'wrap',
+      '& > *': {
+        margin: theme.spacing(0.5),
+      },
+    },
+  }));
 
 // section image
 const useStyles2 = makeStyles({
@@ -47,11 +59,12 @@ const useStyles2 = makeStyles({
 export default function Bulb() {
     const classes = useStyles();
     const classes2 = useStyles2();
+    const classes3 = useStyles3();
     const [state, setState] = React.useState({
         top: false,
 
     });
-
+   
     return (
         <React.Fragment>
             <CssBaseline />
@@ -80,19 +93,20 @@ export default function Bulb() {
                         <div className={classes.root}>
 
                             <Typography variant="h4" gutterBottom lineHeight={10}>
-                                <Box lineHeight={2} m={1}>
-                                    COLLABORATE WITH A CREATIVE MINDSET
+                                <Box lineHeight={2} m={1}  border={2} textAlign="center">
+                                COLLABORATE WITH A CREATIVE MINDSET
+                        
                   </Box>
                                 <Box lineHeight={2} m={1}>
 
                                 </Box>
-                                <Box lineHeight={2} m={1}>
+                                <Box lineHeight={2} m={1} border={2} textAlign="center"> 
                                     UTILIZE MODERN TECHNOLOGY
                   </Box>
                                 <Box lineHeight={2} m={1}>
 
                                 </Box>
-                                <Box lineHeight={2} m={1}>
+                                <Box lineHeight={2} m={1}  border={2} textAlign="center">
                                     FIND WAYS TO INNOVATE
                   </Box>
 
