@@ -2,7 +2,7 @@ import React from 'react';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import Typography from '@material-ui/core/Typography';
 import Grid from '@material-ui/core/Grid';
-
+import Button from '@material-ui/core/Button';
 
 import Box from '@material-ui/core/Box';
 import { makeStyles } from '@material-ui/core/styles';
@@ -47,7 +47,7 @@ const useStyles2 = makeStyles({
 
 
 
-export default function App() {
+export default function Transform() {
     const classes = useStyles();
     const classes2 = useStyles2();
     const classes4 = useStyles4();
@@ -63,38 +63,6 @@ export default function App() {
             {/* section 3 */}
             <Grid container spacing={24} className={classes4.root} style={{ backgroundColor: '#0B0831'}}>
 
-                {/* section  with  text */}
-                <Grid item xl={6} sm={6} xs={12} lg={6} md={6}>
-                    <Typography component="div" style={{ backgroundColor: '#0B0831', height: 'auto' }} >
-
-                        <div className={classes.root}>
-
-                            <Typography variant="h4" gutterBottom lineHeight={10}>
-                                <Box lineHeight={2} m={0}  marginBottom={1} color="#02C6FF" >
-                                    THIS TAKES FROM 
-               
-                                 </Box>
-                                 <Box lineHeight={1} m={0}  marginBottom={4} color="#EFD200
-" >
-  
-                                    A - B.
-                                 </Box>
-         
-                                <Box lineHeight={2} m={0} marginBottom={4} color="#02C6FF" >
-                                    BUT WHY STOP THERE?
-                                         </Box>
-
-                            </Typography>
-                            <Typography variant="p" gutterBottom lineHeight={10}>
-                                <Box lineHeight={2} m={0} marginBottom={4} color="#02C6FF" >
-                                    We don’t stop at building the basic requirement. We find ways to innovate and take it beyond imagination.
-                                    </Box>
-
-                            </Typography>
-                        </div>
-                    </Typography>
-                </Grid>
-
                 {/* section  with  animation */}
                 <Grid item xl={6} sm={6} xs={12} lg={6} md={6}>
                     <Typography component="div" style={{ backgroundColor: '#0B0831', height: 'auto' }} >
@@ -104,7 +72,7 @@ export default function App() {
                                 component="img"
                                 alt="Contemplative Reptile"
                                 // height="500vh"
-                                image="/images/car.gif">
+                                image="/images/full-new.gif">
                             </CardMedia>
 
                         </div>
@@ -112,7 +80,37 @@ export default function App() {
 
                     </Typography>
                 </Grid>
-            </Grid>
+          
+                {/* section  with  text */}
+                <Grid item xl={6} sm={6} xs={12} lg={6} md={6}>
+                    <Typography component="div" style={{ backgroundColor: '#0B0831', height: 'auto' }} align="center" >
+
+                        <div className={classes.root}>
+
+                            <Typography variant="h3" gutterBottom lineHeight={10}>
+                                <Box lineHeight={2} m={0}  marginBottom={1} color="#02C6FF" >
+                                LET’S BUILD A ONE THAT TRANSFORM 
+               
+                                 </Box>
+ 
+
+                            </Typography>
+                            <Typography variant="p" gutterBottom lineHeight={10}>
+                                <Box lineHeight={2} m={0} marginBottom={4} color="#02C6FF" >
+                                We have brought life to true innovations, from pencil sketch to make an impact. It’s such an amazing feeling to bring life to an innovative concept from the scratch. 
+
+Tech is granted, it’s our own UNIQUE spirit of INNOVATION what sets us apart.
+                                    </Box>
+
+                            </Typography>
+                            <Button variant="contained" backgroundColor="#EFD200" disableElevation>
+                            LETS TALK INNOVATION
+    </Button>
+                        </div>
+                    </Typography>
+                </Grid>
+
+  </Grid>
         </React.Fragment>
     );
 }

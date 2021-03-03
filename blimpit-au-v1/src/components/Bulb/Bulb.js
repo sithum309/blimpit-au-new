@@ -93,20 +93,16 @@ export default function Bulb() {
                         <div className={classes.root}>
 
                             <Typography variant="h4" gutterBottom lineHeight={10}>
-                                <Box lineHeight={2} m={1}  border={2} textAlign="center">
+                                <Box lineHeight={2} m={1}  border={2} textAlign="center"  padding={2} marginBottom={8} color="#02C6FF" borderColor="#02C6FF">
                                 COLLABORATE WITH A CREATIVE MINDSET
                         
                   </Box>
-                                <Box lineHeight={2} m={1}>
-
-                                </Box>
-                                <Box lineHeight={2} m={1} border={2} textAlign="center"> 
+                          
+                                <Box lineHeight={2} m={1} border={2} textAlign="center" padding={2} marginBottom={8} color="#02C6FF" borderColor="#02C6FF"> 
                                     UTILIZE MODERN TECHNOLOGY
                   </Box>
-                                <Box lineHeight={2} m={1}>
-
-                                </Box>
-                                <Box lineHeight={2} m={1}  border={2} textAlign="center">
+                             
+                                <Box lineHeight={2} m={1}  border={2} textAlign="center" padding={2} marginBottom={8} color="#02C6FF" borderColor="#02C6FF">
                                     FIND WAYS TO INNOVATE
                   </Box>
 
